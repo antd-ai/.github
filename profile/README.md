@@ -49,10 +49,11 @@ explicit adaptation — each declared as `// @adapt <reason>` and verified by `n
 
 ```mermaid
 flowchart TB
-  up["upstream antd 6.7.0"] --> port["file-by-file port<br/>@source annotated"]
-  port --> gate{"guards<br/>spec · parity · typecheck"}
-  gate -- red --> port
-  gate -- green --> out["@antd-labs/vue · /ng"]
+  up["antd 6.7.0"] --> port["port file by file"]
+  port --> gate{"guards"}
+  gate -->|fail| port
+  gate -->|pass| out["@antd-labs/*"]
+  gate -.- check["spec · parity · typecheck"]
 ```
 
 ### Status
