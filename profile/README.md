@@ -53,7 +53,7 @@ flowchart TB
   port --> gate{"guards"}
   gate -->|fail| port
   gate -->|pass| out["@antd-labs/*"]
-  gate -.- check["spec · parity · typecheck"]
+  gate -.- check["spec · parity"]
 ```
 
 ### Status
