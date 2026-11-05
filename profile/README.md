@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/Ant%20Design-6.7.0-58BBFF?style=flat-square&logo=antdesign&logoColor=white" alt="Ant Design 6.7.0">
   <img src="https://img.shields.io/badge/parity-file--by--file-FF7778?style=flat-square" alt="file-by-file parity">
   <img src="https://img.shields.io/badge/maintained%20by-AI-0B1220?style=flat-square" alt="maintained by AI">
+  <a href="https://www.npmjs.com/org/antd-ai"><img src="https://img.shields.io/badge/npm-%40antd--ai-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm @antd-ai"></a>
   <img src="https://img.shields.io/badge/license-MIT-58BBFF?style=flat-square" alt="MIT">
 </p>
 
@@ -26,13 +27,13 @@ When antd ships a release, we change the same lines they changed.
 
 | Package | Runtime | What it is |
 | :-- | :-- | :-- |
-| `@antd-labs/tokens` | — | seed / map / alias tokens and their derivation functions |
-| `@antd-labs/icons` | — | SVG definitions generated from `@ant-design/icons-svg` |
-| `@antd-labs/util` | — | pure helpers: `isRenderable`, `useControlledState`, `omit`, `pickAttrs` |
-| `@antd-labs/motion` | Vue | the `CSSMotion` equivalent of `@rc-component/motion` |
-| `@antd-labs/trigger` | Vue | popup positioning, portal and focus from `@rc-component/trigger` |
-| `@antd-labs/vue` | Vue 3 | components plus the Vue layer of cssinjs and theme |
-| `@antd-labs/ng` | Angular | the same kernels, rendered by Angular components |
+| `@antd-ai/tokens` | — | seed / map / alias tokens and their derivation functions |
+| `@antd-ai/icons` | — | SVG definitions generated from `@ant-design/icons-svg` |
+| `@antd-ai/util` | — | pure helpers: `isRenderable`, `useControlledState`, `omit`, `pickAttrs` |
+| `@antd-ai/motion` | Vue | the `CSSMotion` equivalent of `@rc-component/motion` |
+| `@antd-ai/trigger` | Vue | popup positioning, portal and focus from `@rc-component/trigger` |
+| `@antd-ai/vue` | Vue 3 | components plus the Vue layer of cssinjs and theme |
+| `@antd-ai/ng` | Angular | the same kernels, rendered by Angular components |
 
 ### Why 1:1
 
@@ -52,7 +53,7 @@ flowchart TB
   up["antd 6.7.0"] --> port["port file by file"]
   port --> gate{"guards"}
   gate -->|fail| port
-  gate -->|pass| out["@antd-labs/*"]
+  gate -->|pass| out["@antd-ai/*"]
   gate -.- check["spec · parity"]
 ```
 
